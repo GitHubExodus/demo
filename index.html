@@ -1,24 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Public Chat App</title>
-    <link rel="stylesheet" href="styles.css">
-    <script type="module" src="script.js" defer></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Secure Chat App</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-    <div id="app">
-        <header>
-            <h1>Public Chat</h1>
-        </header>
-        <div id="chatSection">
-            <div id="messages" class="messages"></div>
-            <div id="messageInputSection">
-                <input type="text" id="messageInput" placeholder="Type a message...">
-                <button id="sendMessageButton">Send</button>
-            </div>
-        </div>
-    </div>
+  <!-- Password Screen Only -->
+  <div id="passwordScreen">
+    <h1>Enter Passcode to Access Chat</h1>
+    <input type="text" id="passwordInput" placeholder="Enter code..." maxlength="10" />
+    <button id="submitPasswordButton">Submit</button>
+    <p id="errorMessage" class="error"></p>
+  </div>
+
+  <!-- The chat app will be dynamically loaded after the passcode is validated -->
+
+  <!-- Bootstrap Script -->
+  <script type="module" src="script.js"></script>
 </body>
 </html>
